@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Falvanoids <= 1.575\nentropy = 1.562\nsamples = 124\nvalue = [36, 52, 36]\nclass = 2"] ;
+1 [label="Color_intensity <= 3.825\nentropy = 0.785\nsamples = 47\nvalue = [0, 11, 36]\nclass = 3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 10\nvalue = [0, 10, 0]\nclass = 2"] ;
+1 -> 2 ;
+3 [label="Ash <= 2.06\nentropy = 0.179\nsamples = 37\nvalue = [0, 1, 36]\nclass = 3"] ;
+1 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 2"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 36\nvalue = [0, 0, 36]\nclass = 3"] ;
+3 -> 5 ;
+6 [label="Proline <= 740.0\nentropy = 0.997\nsamples = 77\nvalue = [36, 41, 0]\nclass = 2"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="Alchol <= 13.175\nentropy = 0.169\nsamples = 40\nvalue = [1, 39, 0]\nclass = 2"] ;
+6 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 36\nvalue = [0, 36, 0]\nclass = 2"] ;
+7 -> 8 ;
+9 [label="entropy = 0.811\nsamples = 4\nvalue = [1, 3, 0]\nclass = 2"] ;
+7 -> 9 ;
+10 [label="Color_intensity <= 3.365\nentropy = 0.303\nsamples = 37\nvalue = [35, 2, 0]\nclass = 1"] ;
+6 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = 2"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 35\nvalue = [35, 0, 0]\nclass = 1"] ;
+10 -> 12 ;
+}
